@@ -10,20 +10,20 @@ Reference: https://www.sharcnet.ca/help/index.php/Using_Unix_Overview
 Data:      http://swcarpentry.github.io/shell-novice/shell-novice-data.zip
 
 data-shell
-+-- creatures
-+-- data
-�   +-- elements
-�   +-- pdb
-+-- Desktop
-+-- molecules
-+-- north-pacific-gyre
-�   +-- 2012-07-03
-+-- writing
-    +-- data
-    +-- old
-    +-- thesis
-    +-- tools
-        +-- old
+├── creatures
+├── data
+│   ├── elements
+│   └── pdb
+├── Desktop
+├── molecules
+├── north-pacific-gyre
+│   └── 2012-07-03
+└── writing
+    ├── data
+    ├── old
+    ├── thesis
+    └── tools
+        └── old
 
 look up command by googling: <command> man page
 
@@ -295,3 +295,8 @@ You can view all the log messages going back to the start with (the `--graph` op
 ```bash
 git log
 ```
+
+You can view the changes that aren't staged yet with (you can specify a file to just see the changes in that file)
+
+```bash
+git diff
