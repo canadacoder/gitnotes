@@ -331,6 +331,7 @@ Commits can be specified by
 
 # Branching
 
+<<<<<<< HEAD
 Create branch named history, then switch branch and verify (will display a `*` beside the current branch)
 
 ```bash
@@ -348,3 +349,20 @@ Switch to a different branch (may overwrite files)
 ```bash
 git checkout history
 ```
+=======
+Create branch named history, then switch branch and verify
+$ git branch 
+* master
+
+$ git branch history  (creates branch history)
+
+$ git branch (verify branch created)
+  history
+* master
+
+git checkout history (change to branch history) 
+Switched to branch 'history'
+
+$ git branch (verify branch changed to history) 
+* history
+  master
