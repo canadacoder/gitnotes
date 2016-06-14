@@ -300,3 +300,13 @@ You can view the changes that aren't staged yet with (you can specify a file to 
 
 ```bash
 git diff
+```
+
+You can view how the next version (the staged version) differs from the previous version with
+
+```bash
+git diff --staged
+```
+
+View changes between Folder/Working tree and master
+git diff master
