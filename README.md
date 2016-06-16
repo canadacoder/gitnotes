@@ -1,3 +1,15 @@
+1 - create a git repository in a folder (e.g., shellnotes) and add as an initial commit the command synopsis from the shell session
+
+R2 - create a new branch called questions and add the questions to your file and commit
+
+G3 - switch back to the master branch and add the synposis about running commands (i.e., input/output redirection) and commit it
+
+B4 - merge the questions branch onto the master branch
+
+Y5 - move the questions stuff out into its own file and commit (now you will have two files which is new)
+
+6 - add the synopsis about pattern matching/globbing
+
 Welcome to the Unix Shell session of the Research Computing Workshop
 
 1 - Red
@@ -233,6 +245,11 @@ Linux - possibly already installed, if "git" at the command doesn't work
 Ububtu/Debian: sudo apt-get install git
 Fedora: sudo dnf install git
 
+You can find a copy of the git diagram for the class at (see the "Basic workflow" section)
+
+https://www.sharcnet.ca/help/index.php/GIT
+
+
 # Configuration 
 
 Global configuration stored under ~/.gitconfig. Local configuration store$ 
@@ -304,7 +321,9 @@ git diff
 
 You can view how the next version (the staged version) differs from the previous version with
 
-```bash
+```bash git add -p shell_notes.md
+No changes.
+erika@boltzmann:~/Desktop/shell_notes$
 git diff --staged
 ```
 
@@ -331,7 +350,6 @@ Commits can be specified by
 
 # Branching
 
-<<<<<<< HEAD
 Create branch named history, then switch branch and verify (will display a `*` beside the current branch)
 
 ```bash
@@ -349,20 +367,25 @@ Switch to a different branch (may overwrite files)
 ```bash
 git checkout history
 ```
-=======
-Create branch named history, then switch branch and verify
-$ git branch 
-* master
 
-$ git branch history  (creates branch history)
+To merge in the changes in another branch called history into the current branch
 
-$ git branch (verify branch created)
-  history
-* master
+```
+git merge history
+```
 
-git checkout history (change to branch history) 
-Switched to branch 'history'
+To read the manual - git and branch options.....q to quit
+```bash
+man -k git
 
-$ git branch (verify branch changed to history) 
-* history
-  master
+man git-branch
+```
+
+To see the different ways of specifying commits (and groups of commits for things like log to show)
+
+```bash
+man gitrevisions
+```bash
+
+#To read about the licenses when you create a new project
+creativecommons.org/licenses
