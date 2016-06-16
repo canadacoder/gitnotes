@@ -389,3 +389,10 @@ man gitrevisions
 
 #To read about the licenses when you create a new project
 creativecommons.org/licenses
+
+# Getting a personal account on SHARCNET
+
+https://www.sharcnet.ca/help/index.php/Getting_an_Account_with_SHARCNET
+https://ccdb.computecanada.ca
+
+
